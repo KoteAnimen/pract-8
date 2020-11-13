@@ -31,10 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.choseFather = new System.Windows.Forms.NumericUpDown();
-            this.fathersList = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.choseStudent = new System.Windows.Forms.NumericUpDown();
@@ -55,10 +51,10 @@
             this.CreateMan = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.choseFather)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.choseStudent)).BeginInit();
             this.tabPage2.SuspendLayout();
@@ -66,6 +62,7 @@
             this.menuStrip1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -75,77 +72,42 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 52);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(465, 426);
+            this.tabControl1.Size = new System.Drawing.Size(236, 464);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(457, 400);
+            this.tabPage1.Size = new System.Drawing.Size(228, 438);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Списки людей";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.choseFather);
-            this.groupBox2.Controls.Add(this.fathersList);
-            this.groupBox2.Location = new System.Drawing.Point(230, 6);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(221, 384);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Отец студента";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 338);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Выбрать отца студента";
-            // 
-            // choseFather
-            // 
-            this.choseFather.Location = new System.Drawing.Point(6, 358);
-            this.choseFather.Name = "choseFather";
-            this.choseFather.Size = new System.Drawing.Size(145, 20);
-            this.choseFather.TabIndex = 3;
-            // 
-            // fathersList
-            // 
-            this.fathersList.FormattingEnabled = true;
-            this.fathersList.Location = new System.Drawing.Point(6, 18);
-            this.fathersList.Name = "fathersList";
-            this.fathersList.Size = new System.Drawing.Size(209, 316);
-            this.fathersList.TabIndex = 0;
-            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.choseStudent);
             this.groupBox1.Controls.Add(this.studentsList);
             this.groupBox1.Location = new System.Drawing.Point(3, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(221, 384);
+            this.groupBox1.Size = new System.Drawing.Size(221, 426);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Студент";
+            this.groupBox1.Text = "Студенты";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 338);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 13);
+            this.label1.Size = new System.Drawing.Size(122, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Выбрать студента";
+            this.label1.Text = "Выбрать 1-го студента";
             // 
             // choseStudent
             // 
@@ -168,7 +130,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(457, 400);
+            this.tabPage2.Size = new System.Drawing.Size(228, 438);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Добавление человека";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -179,7 +141,7 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(488, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(259, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -198,7 +160,7 @@
             this.AboutUs});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(488, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(259, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -232,7 +194,7 @@
             // student
             // 
             this.student.AutoSize = true;
-            this.student.Location = new System.Drawing.Point(6, 31);
+            this.student.Location = new System.Drawing.Point(6, 19);
             this.student.Name = "student";
             this.student.Size = new System.Drawing.Size(66, 17);
             this.student.TabIndex = 4;
@@ -242,11 +204,11 @@
             // father
             // 
             this.father.AutoSize = true;
-            this.father.Location = new System.Drawing.Point(95, 31);
+            this.father.Location = new System.Drawing.Point(6, 42);
             this.father.Name = "father";
-            this.father.Size = new System.Drawing.Size(99, 17);
+            this.father.Size = new System.Drawing.Size(150, 17);
             this.father.TabIndex = 5;
-            this.father.Text = "Отец студента";
+            this.father.Text = "Студент-отец семейства";
             this.father.UseVisualStyleBackColor = true;
             // 
             // label3
@@ -306,18 +268,34 @@
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.middleNameMans);
             this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Location = new System.Drawing.Point(122, 56);
+            this.groupBox4.Location = new System.Drawing.Point(6, 64);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(215, 278);
             this.groupBox4.TabIndex = 11;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Человек";
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(6, 400);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(145, 20);
+            this.numericUpDown1.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 381);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(122, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Выбрать 2-го студента";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(488, 480);
+            this.ClientSize = new System.Drawing.Size(259, 528);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.tabControl1);
@@ -330,9 +308,6 @@
             this.Text = "Практическая №8";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.choseFather)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.choseStudent)).EndInit();
@@ -345,6 +320,7 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -355,12 +331,8 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListBox fathersList;
         private System.Windows.Forms.ListBox studentsList;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown choseFather;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown choseStudent;
         private System.Windows.Forms.ToolStrip toolStrip1;
@@ -378,6 +350,8 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button CreateMan;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
 

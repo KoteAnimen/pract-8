@@ -32,37 +32,38 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.choseStudent = new System.Windows.Forms.NumericUpDown();
             this.studentsList = new System.Windows.Forms.ListBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.student = new System.Windows.Forms.CheckBox();
+            this.father = new System.Windows.Forms.CheckBox();
+            this.nameMans = new System.Windows.Forms.TextBox();
+            this.CreateMan = new System.Windows.Forms.Button();
+            this.surnameMans = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.middleNameMans = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.AboutUs = new System.Windows.Forms.ToolStripMenuItem();
-            this.nameMans = new System.Windows.Forms.TextBox();
-            this.surnameMans = new System.Windows.Forms.TextBox();
-            this.middleNameMans = new System.Windows.Forms.TextBox();
-            this.student = new System.Windows.Forms.CheckBox();
-            this.father = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.CreateMan = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
+            this.CloneStudent = new System.Windows.Forms.ToolStripButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.choseStudent)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -100,6 +101,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Студенты";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 381);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(122, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Выбрать 2-го студента";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(6, 400);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(145, 20);
+            this.numericUpDown1.TabIndex = 4;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -135,10 +152,116 @@
             this.tabPage2.Text = "Добавление человека";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label3);
+            this.groupBox4.Controls.Add(this.groupBox3);
+            this.groupBox4.Controls.Add(this.nameMans);
+            this.groupBox4.Controls.Add(this.CreateMan);
+            this.groupBox4.Controls.Add(this.surnameMans);
+            this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Controls.Add(this.middleNameMans);
+            this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Location = new System.Drawing.Point(6, 64);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(215, 278);
+            this.groupBox4.TabIndex = 11;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Человек";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Имя";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.student);
+            this.groupBox3.Controls.Add(this.father);
+            this.groupBox3.Location = new System.Drawing.Point(6, 161);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 68);
+            this.groupBox3.TabIndex = 10;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Статус человека";
+            // 
+            // student
+            // 
+            this.student.AutoSize = true;
+            this.student.Location = new System.Drawing.Point(6, 19);
+            this.student.Name = "student";
+            this.student.Size = new System.Drawing.Size(66, 17);
+            this.student.TabIndex = 4;
+            this.student.Text = "Студент";
+            this.student.UseVisualStyleBackColor = true;
+            // 
+            // father
+            // 
+            this.father.AutoSize = true;
+            this.father.Location = new System.Drawing.Point(6, 42);
+            this.father.Name = "father";
+            this.father.Size = new System.Drawing.Size(150, 17);
+            this.father.TabIndex = 5;
+            this.father.Text = "Студент-отец семейства";
+            this.father.UseVisualStyleBackColor = true;
+            // 
+            // nameMans
+            // 
+            this.nameMans.Location = new System.Drawing.Point(6, 48);
+            this.nameMans.Name = "nameMans";
+            this.nameMans.Size = new System.Drawing.Size(202, 20);
+            this.nameMans.TabIndex = 0;
+            // 
+            // CreateMan
+            // 
+            this.CreateMan.Location = new System.Drawing.Point(6, 238);
+            this.CreateMan.Name = "CreateMan";
+            this.CreateMan.Size = new System.Drawing.Size(202, 23);
+            this.CreateMan.TabIndex = 9;
+            this.CreateMan.Text = "Создать";
+            this.CreateMan.UseVisualStyleBackColor = true;
+            // 
+            // surnameMans
+            // 
+            this.surnameMans.Location = new System.Drawing.Point(6, 90);
+            this.surnameMans.Name = "surnameMans";
+            this.surnameMans.Size = new System.Drawing.Size(202, 20);
+            this.surnameMans.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 119);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Отчество";
+            // 
+            // middleNameMans
+            // 
+            this.middleNameMans.Location = new System.Drawing.Point(6, 135);
+            this.middleNameMans.Name = "middleNameMans";
+            this.middleNameMans.Size = new System.Drawing.Size(202, 20);
+            this.middleNameMans.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 74);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Фамилия";
+            // 
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1});
+            this.toolStripButton1,
+            this.CloneStudent});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(259, 25);
@@ -170,126 +293,14 @@
             this.AboutUs.Size = new System.Drawing.Size(94, 20);
             this.AboutUs.Text = "О программе";
             // 
-            // nameMans
+            // CloneStudent
             // 
-            this.nameMans.Location = new System.Drawing.Point(6, 48);
-            this.nameMans.Name = "nameMans";
-            this.nameMans.Size = new System.Drawing.Size(202, 20);
-            this.nameMans.TabIndex = 0;
-            // 
-            // surnameMans
-            // 
-            this.surnameMans.Location = new System.Drawing.Point(6, 90);
-            this.surnameMans.Name = "surnameMans";
-            this.surnameMans.Size = new System.Drawing.Size(202, 20);
-            this.surnameMans.TabIndex = 1;
-            // 
-            // middleNameMans
-            // 
-            this.middleNameMans.Location = new System.Drawing.Point(6, 135);
-            this.middleNameMans.Name = "middleNameMans";
-            this.middleNameMans.Size = new System.Drawing.Size(202, 20);
-            this.middleNameMans.TabIndex = 2;
-            // 
-            // student
-            // 
-            this.student.AutoSize = true;
-            this.student.Location = new System.Drawing.Point(6, 19);
-            this.student.Name = "student";
-            this.student.Size = new System.Drawing.Size(66, 17);
-            this.student.TabIndex = 4;
-            this.student.Text = "Студент";
-            this.student.UseVisualStyleBackColor = true;
-            // 
-            // father
-            // 
-            this.father.AutoSize = true;
-            this.father.Location = new System.Drawing.Point(6, 42);
-            this.father.Name = "father";
-            this.father.Size = new System.Drawing.Size(150, 17);
-            this.father.TabIndex = 5;
-            this.father.Text = "Студент-отец семейства";
-            this.father.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Имя";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 74);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Фамилия";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 119);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Отчество";
-            // 
-            // CreateMan
-            // 
-            this.CreateMan.Location = new System.Drawing.Point(6, 238);
-            this.CreateMan.Name = "CreateMan";
-            this.CreateMan.Size = new System.Drawing.Size(202, 23);
-            this.CreateMan.TabIndex = 9;
-            this.CreateMan.Text = "Создать";
-            this.CreateMan.UseVisualStyleBackColor = true;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.student);
-            this.groupBox3.Controls.Add(this.father);
-            this.groupBox3.Location = new System.Drawing.Point(6, 161);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 68);
-            this.groupBox3.TabIndex = 10;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Статус человека";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label3);
-            this.groupBox4.Controls.Add(this.groupBox3);
-            this.groupBox4.Controls.Add(this.nameMans);
-            this.groupBox4.Controls.Add(this.CreateMan);
-            this.groupBox4.Controls.Add(this.surnameMans);
-            this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Controls.Add(this.middleNameMans);
-            this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Location = new System.Drawing.Point(6, 64);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(215, 278);
-            this.groupBox4.TabIndex = 11;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Человек";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(6, 400);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(145, 20);
-            this.numericUpDown1.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 381);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Выбрать 2-го студента";
+            this.CloneStudent.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.CloneStudent.Image = ((System.Drawing.Image)(resources.GetObject("CloneStudent.Image")));
+            this.CloneStudent.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.CloneStudent.Name = "CloneStudent";
+            this.CloneStudent.Size = new System.Drawing.Size(23, 22);
+            this.CloneStudent.Text = "Клонировать студента";
             // 
             // Form1
             // 
@@ -310,17 +321,17 @@
             this.tabPage1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.choseStudent)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -352,6 +363,7 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.ToolStripButton CloneStudent;
     }
 }
 

@@ -70,22 +70,55 @@ namespace pract_8
                     Student st = (Student)students_list[studentsList.SelectedIndex].Clone();
                     IMan man = st;
                     studentsList.Items.Add(man.GetParams());
+                    students_list.Add(st);
                 }
                 if (tabControl1.SelectedIndex == 1)
                 {
                     Father fath = (Father)fathers_list[fathersList.SelectedIndex].Clone();
                     IMan man = fath;
                     fathersList.Items.Add(man.GetParams());
+                    fathers_list.Add(fath);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Нужно выбрать элемент из списка");
+            }            
+        }
+
+        private void DeleteMan_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (tabControl1.SelectedIndex == 0)
+                {
+                    students_list.RemoveAt(studentsList.SelectedIndex);
+                    studentsList.Items.RemoveAt(studentsList.SelectedIndex);                    
+                }
+                if (tabControl1.SelectedIndex == 1)
+                {
+                    fathers_list.RemoveAt(fathersList.SelectedIndex);
+                    fathersList.Items.RemoveAt(fathersList.SelectedIndex);                    
                 }
             }
             catch
             {
                 MessageBox.Show("Нужно выбрать элемент из списка");
             }
-            
-            
-            
-            
+        }
+
+        private void ClearList_Click(object sender, EventArgs e)
+        {
+            if (tabControl1.SelectedIndex == 0)
+            {
+                students_list.Clear();
+                studentsList.Items.Clear();
+            }
+            if (tabControl1.SelectedIndex == 1)
+            {
+                fathers_list.Clear();
+                fathersList.Items.Clear();
+            }
         }
     }
 }

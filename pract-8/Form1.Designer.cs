@@ -34,13 +34,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.studentsList = new System.Windows.Forms.ListBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.CloneStudent = new System.Windows.Forms.ToolStripButton();
-            this.DeleteMan = new System.Windows.Forms.ToolStripButton();
-            this.ClearList = new System.Windows.Forms.ToolStripButton();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.AboutUs = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.fathersList = new System.Windows.Forms.ListBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,18 +48,23 @@
             this.label5 = new System.Windows.Forms.Label();
             this.middleNameMans = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.fathersList = new System.Windows.Forms.ListBox();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.CloneStudent = new System.Windows.Forms.ToolStripButton();
+            this.DeleteMan = new System.Windows.Forms.ToolStripButton();
+            this.ClearList = new System.Windows.Forms.ToolStripButton();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.AboutUs = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -118,72 +118,23 @@
             this.tabPage2.Text = "Студенты-отцы";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // toolStrip1
+            // groupBox2
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.CloneStudent,
-            this.DeleteMan,
-            this.ClearList});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(264, 25);
-            this.toolStrip1.TabIndex = 1;
-            this.toolStrip1.Text = "toolStrip1";
+            this.groupBox2.Controls.Add(this.fathersList);
+            this.groupBox2.Location = new System.Drawing.Point(3, 6);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(221, 426);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Студенты-отцы";
             // 
-            // toolStripButton1
+            // fathersList
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "Сравнить людей";
-            // 
-            // CloneStudent
-            // 
-            this.CloneStudent.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.CloneStudent.Image = ((System.Drawing.Image)(resources.GetObject("CloneStudent.Image")));
-            this.CloneStudent.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.CloneStudent.Name = "CloneStudent";
-            this.CloneStudent.Size = new System.Drawing.Size(23, 22);
-            this.CloneStudent.Text = "Клонировать студента";
-            this.CloneStudent.Click += new System.EventHandler(this.CloneStudent_Click);
-            // 
-            // DeleteMan
-            // 
-            this.DeleteMan.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.DeleteMan.Image = ((System.Drawing.Image)(resources.GetObject("DeleteMan.Image")));
-            this.DeleteMan.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.DeleteMan.Name = "DeleteMan";
-            this.DeleteMan.Size = new System.Drawing.Size(23, 22);
-            this.DeleteMan.Text = "Удалить из списка";
-            // 
-            // ClearList
-            // 
-            this.ClearList.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.ClearList.Image = ((System.Drawing.Image)(resources.GetObject("ClearList.Image")));
-            this.ClearList.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.ClearList.Name = "ClearList";
-            this.ClearList.Size = new System.Drawing.Size(23, 22);
-            this.ClearList.Text = "Очистить список";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.AboutUs});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(264, 24);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // AboutUs
-            // 
-            this.AboutUs.Name = "AboutUs";
-            this.AboutUs.Size = new System.Drawing.Size(94, 20);
-            this.AboutUs.Text = "О программе";
-            this.AboutUs.Click += new System.EventHandler(this.AboutUs_Click);
+            this.fathersList.FormattingEnabled = true;
+            this.fathersList.Location = new System.Drawing.Point(6, 19);
+            this.fathersList.Name = "fathersList";
+            this.fathersList.Size = new System.Drawing.Size(209, 316);
+            this.fathersList.TabIndex = 0;
             // 
             // tabPage3
             // 
@@ -305,23 +256,74 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Фамилия";
             // 
-            // groupBox2
+            // toolStrip1
             // 
-            this.groupBox2.Controls.Add(this.fathersList);
-            this.groupBox2.Location = new System.Drawing.Point(3, 6);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(221, 426);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Студенты-отцы";
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.CloneStudent,
+            this.DeleteMan,
+            this.ClearList});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(264, 25);
+            this.toolStrip1.TabIndex = 1;
+            this.toolStrip1.Text = "toolStrip1";
             // 
-            // fathersList
+            // toolStripButton1
             // 
-            this.fathersList.FormattingEnabled = true;
-            this.fathersList.Location = new System.Drawing.Point(6, 19);
-            this.fathersList.Name = "fathersList";
-            this.fathersList.Size = new System.Drawing.Size(209, 316);
-            this.fathersList.TabIndex = 0;
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "Сравнить людей";
+            // 
+            // CloneStudent
+            // 
+            this.CloneStudent.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.CloneStudent.Image = ((System.Drawing.Image)(resources.GetObject("CloneStudent.Image")));
+            this.CloneStudent.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.CloneStudent.Name = "CloneStudent";
+            this.CloneStudent.Size = new System.Drawing.Size(23, 22);
+            this.CloneStudent.Text = "Клонировать студента";
+            this.CloneStudent.Click += new System.EventHandler(this.CloneStudent_Click);
+            // 
+            // DeleteMan
+            // 
+            this.DeleteMan.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.DeleteMan.Image = ((System.Drawing.Image)(resources.GetObject("DeleteMan.Image")));
+            this.DeleteMan.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.DeleteMan.Name = "DeleteMan";
+            this.DeleteMan.Size = new System.Drawing.Size(23, 22);
+            this.DeleteMan.Text = "Удалить из списка";
+            this.DeleteMan.Click += new System.EventHandler(this.DeleteMan_Click);
+            // 
+            // ClearList
+            // 
+            this.ClearList.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ClearList.Image = ((System.Drawing.Image)(resources.GetObject("ClearList.Image")));
+            this.ClearList.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ClearList.Name = "ClearList";
+            this.ClearList.Size = new System.Drawing.Size(23, 22);
+            this.ClearList.Text = "Очистить список";
+            this.ClearList.Click += new System.EventHandler(this.ClearList_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AboutUs});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(264, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // AboutUs
+            // 
+            this.AboutUs.Name = "AboutUs";
+            this.AboutUs.Size = new System.Drawing.Size(94, 20);
+            this.AboutUs.Text = "О программе";
+            this.AboutUs.Click += new System.EventHandler(this.AboutUs_Click);
             // 
             // Form1
             // 
@@ -342,16 +344,16 @@
             this.tabPage1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

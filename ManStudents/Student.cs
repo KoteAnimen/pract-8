@@ -10,8 +10,7 @@ namespace ManStudents
     {
        public string FirstName { get; set; }
        public string LastName { get; set; }
-       public string MiddleName { get; set; }
-       public bool IsStudent { get; set; } = true;
+       public string MiddleName { get; set; }       
 
         public Student(string firstName, string lastName, string miggleName)
         {
@@ -43,8 +42,7 @@ namespace ManStudents
        public string FirstName { get; set; }
        public string LastName { get; set; }
        public string MiddleName { get; set; }
-       public bool IsFather { get; set; } = true;
-
+       
         public Father(string firstName, string lastName, string miggleName)
         {
             FirstName = firstName;

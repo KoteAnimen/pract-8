@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ManStudents
 {
-    interface IMan
+   public interface IMan
     {
         string FirstName { get; set; }
         string LastName { get; set; }

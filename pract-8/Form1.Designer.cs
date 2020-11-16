@@ -49,7 +49,7 @@
             this.middleNameMans = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.CompareStudents = new System.Windows.Forms.ToolStripButton();
             this.CloneStudent = new System.Windows.Forms.ToolStripButton();
             this.DeleteMan = new System.Windows.Forms.ToolStripButton();
             this.ClearList = new System.Windows.Forms.ToolStripButton();
@@ -259,7 +259,7 @@
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
+            this.CompareStudents,
             this.CloneStudent,
             this.DeleteMan,
             this.ClearList});
@@ -269,14 +269,15 @@
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButton1
+            // CompareStudents
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "Сравнить людей";
+            this.CompareStudents.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.CompareStudents.Image = ((System.Drawing.Image)(resources.GetObject("CompareStudents.Image")));
+            this.CompareStudents.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.CompareStudents.Name = "CompareStudents";
+            this.CompareStudents.Size = new System.Drawing.Size(23, 22);
+            this.CompareStudents.Text = "Сравнить людей";
+            this.CompareStudents.Click += new System.EventHandler(this.CompareStudents_Click);
             // 
             // CloneStudent
             // 
@@ -367,7 +368,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ListBox studentsList;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton CompareStudents;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem AboutUs;
         private System.Windows.Forms.ToolStripButton CloneStudent;

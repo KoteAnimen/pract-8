@@ -120,5 +120,32 @@ namespace pract_8
                 fathersList.Items.Clear();
             }
         }
+
+        private void CompareStudents_Click(object sender, EventArgs e)
+        {
+            int idStudent = 0;
+            int idFather = 0;
+            if (tabControl1.SelectedIndex == 0)
+            {
+                idStudent = studentsList.SelectedIndex;
+            }
+            if(tabControl1.SelectedIndex == 1)
+            {
+                idFather = fathersList.SelectedIndex;
+            }
+            try
+            {
+                if(students_list[idStudent].CompareTo(fathers_list[idFather]) == 0)
+                {
+                    MessageBox.Show("Фамилии выбранных студентов совпадают");
+                }                
+
+                else MessageBox.Show("Фамилии выбранных студентов не совпадают");
+            }
+            catch
+            {
+                MessageBox.Show("Нужно выбрать студентов");
+            }
+        }
     }
 }

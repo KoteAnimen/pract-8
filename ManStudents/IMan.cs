@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ManStudents
 {
-   public interface IMan
+   public interface IMan : IComparable, ICloneable
     {
         string FirstName { get; set; }
         string LastName { get; set; }

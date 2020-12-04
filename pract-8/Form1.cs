@@ -13,8 +13,8 @@ namespace pract_8
 {
     public partial class Form1 : Form
     {
-        public List<Student> students_list = new List<Student>();
-        public List<Father> fathers_list = new List<Father>();
+        public List<IMan> students_list = new List<IMan>();
+        public List<IMan> fathers_list = new List<IMan>();
 
         public Form1()
         {
@@ -29,14 +29,14 @@ namespace pract_8
                 {
                     Student st = new Student(nameMans.Text, surnameMans.Text, middleNameMans.Text);
                     IMan man = st;
-                    students_list.Add(st);
+                    students_list.Add(man);
                     studentsList.Items.Add(man.GetParams());
                 }
                 if (father.Checked == true)
                 {
                     Father fath = new Father(nameMans.Text, surnameMans.Text, middleNameMans.Text);
                     IMan man = fath;
-                    fathers_list.Add(fath);
+                    fathers_list.Add(man);
                     fathersList.Items.Add(man.GetParams());
                 }
                 if (student.Checked == false && father.Checked == false) MessageBox.Show("Нужно выбрать статус студента");
